@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --main-color: #4caf4f;
+}
+@media (width>=768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (width>=991px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (width>=1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+/* header */
+.header {
+  height: 84px;
+  align-content: center;
+  background-color: #f5f7fa;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo {
+  color: #263238;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  align-content: center;
+}
+.header .container .logo::before {
+  position: absolute;
+  content: url(../images/Icon.png);
+  width: 35px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+}
+.header .container .links {
+  position: relative;
+  margin-left: auto;
+}
+.header .container .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-inline: auto;
+}
+
+.header .container .nav li {
+  margin-right: 50px;
+}
+.header .container .nav li a {
+  color: #18191f;
+  text-decoration: none;
+}
+.header .container .login {
+  align-content: center;
+}
+.header .container .login button {
+  padding: 10px 20px;
+  border: none;
+}
+.header .container .login .Login-button {
+  margin-right: 20px;
+  color: var(--main-color);
+  background-color: transparent;
+}
+.header .container .login .Signup {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: white;
+}
+/* header */
+/* hero-section */
+.hero-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #f5f7fa;
+  position: relative;
+}
+.hero-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 104px; */
+}
+.hero-section .container .frame-1 {
+  margin-right: 104px;
+}
+.hero-section .container .frame-1 .text {
+  margin-bottom: 32px;
+}
+.hero-section .container .frame-1 h1 {
+  font-size: 64px;
+  line-height: 76px;
+  color: #4d4d4d;
+  margin: 0 0 16px;
+}
+.hero-section .container .frame-1 h1 span {
+  color: #4caf4f;
+}
+.hero-section .container .frame-1 p {
+  color: #717171;
+  font-size: 16px;
+}
+.hero-section .container .frame-1 a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-color);
+  padding: 14px 32px;
+  border-radius: 4px;
+  display: block;
+  width: fit-content;
+}
+.hero-section .container .illustration {
+  width: 391px;
+  height: 407px;
+}
+.hero-section .container .bullets {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-section .container .bullets span {
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.hero-section .container .bullets span.active {
+  opacity: 1;
+}
+/* hero-section */
+/* clients */
+
+.clients {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.heading-text {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.heading-text h2 {
+  margin-bottom: 8px;
+  font-size: 36px;
+  color: #4d4d4d;
+}
+.heading-text p {
+  color: #717171;
+  line-height: 24px;
+  font-size: 16px;
+}
+.clients .container .clients-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 98px;
+}
+.clients .container .clients-logo img {
+  width: 48px;
+  height: 48px;
+}
+/* clients */
+/* community */
+.community .container .frame-4 {
+  display: flex;
+  justify-content: space-between;
+  gap: ;
+}
+.community .container .frame-4 .box {
+  flex-basis: 299px;
+  text-align: center;
+  padding: 24px 32px 24px 32px;
+  border-radius: 8px;
+}
+.community .container .frame-4 .box img {
+  margin-bottom: 16px;
+}
+.community .container .frame-4 .box h2 {
+  margin-bottom: 8px;
+  color: #4d4d4d;
+  font-size: 28px;
+  text-align: center;
+}
+.community .container .frame-4 .box p {
+  color: #717171;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+/* community */
